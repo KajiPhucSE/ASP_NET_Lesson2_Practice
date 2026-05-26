@@ -1,0 +1,24 @@
+﻿@* Khai báo kiểu dữ liệu cho Model (ở bài này Model là một chuỗi văn bản - string) *@
+@model string
+
+@{
+    // Tắt Layout mặc định để giao diện hiển thị đơn giản nhất
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Thông tin sinh viên</title>
+</head>
+<body>
+    <h2>Thông tin chi tiết:</h2>
+
+    <p><strong>Tên:</strong> @ViewBag.Name</p>
+
+    <p><strong>Tuổi:</strong> @ViewData["Age"]</p>
+
+    <p><strong>Ngành:</strong> @Model</p>
+</body>
+</html>
